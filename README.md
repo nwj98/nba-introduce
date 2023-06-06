@@ -9,3 +9,5 @@
 
 4. index페이지에서 teams를 누르면 nba팀들을 볼 수 있음
 
+5. index페이지에서 players를 누르고 선수를 검색하면 선수 정보를 볼 수 있음
+// Nikola Jokic
