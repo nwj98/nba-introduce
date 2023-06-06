@@ -11,3 +11,5 @@
 
 5. index페이지에서 players를 누르고 선수를 검색하면 선수 정보를 볼 수 있음
 // Nikola Jokic
+
+6. index페이지에서 careers를 누르고 선수를 검색하면 선수 커리어 기록을 볼 수 있음
