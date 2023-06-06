@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>NBA Teams</title>
+  </head>
+
+  <body>
+    <ul>
+      {% for team in teams %}
+      <!-- nba각 팀들의 로고를 team.id를 이용하여 가져오는 url  -->
+      <img
+        src="https://cdn.nba.com/logos/nba/{{team.id}}/global/L/logo.svg"
+        alt="{{team.fullname}}"
+        height="280"
+        width="180"
+      />
+      <li>풀 네임: {{team.full_name}}</li>
+      <li>약어: {{team.abbreviation}}</li>
+      <li>닉네임: {{team.nickname}}</li>
+      <li>도시: {{team.city}}</li>
+      <li>주: {{team.state}}</li>
+      <li>창단년도: {{team.year_founded}}</li>
+
+      {% endfor %}
+    </ul>
+  </body>
+</html>
