@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>NBA Player</title>
+  </head>
+
+  <body>
+    <form action="{{ url_for('players') }}" method="POST">
+      <label>풀 네임</label>
+      <input name="full_name" type="text" />
+      <label>성</label>
+      <input name="first_name" type="text" />
+      <label>이름</label>
+      <input name="last_name" type="text" />
+      <button type="submit">검색</button>
+    </form>
+    {% if players == {}: %}
+    <p>검색결과 없음</p>
+    {% else %} 
+    <img src="https://cdn.nba.com/headshots/nba/latest/260x190/{{players.id}}.png" alt="{{players.full_name}}">
+    <ul>
+      <li>풀 네임: {{players.full_name}} </li>
+      <li>성: {{players.first_name}} </li>
+      <li>이름: {{players.last_name}} </li>
+      <li>현역선수: {{players.is_active}} </li>
+    </ul>
+    {% endif %}
+  </body>
+</html>
